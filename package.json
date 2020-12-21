@@ -1,15 +1,15 @@
 {
-  "name": "myext",
-  "version": "0.1.0",
+  "name": "enricocasadei-myext",
+  "version": "0.1.1",
   "description": "A JupyterLab extension.",
   "keywords": [
     "jupyter",
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/my_name/myextension",
+  "homepage": "https://github.com/enricocasadei/myext",
   "bugs": {
-    "url": "https://github.com/my_name/myextension/issues"
+    "url": "https://github.com/enricocasadei/myext/issues"
   },
   "license": "BSD-3-Clause",
   "author": "enrico",
@@ -22,7 +22,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/my_name/myextension.git"
+    "url": "https://github.com/enricocasadei/myext.git"
   },
   "scripts": {
     "build": "tsc",
