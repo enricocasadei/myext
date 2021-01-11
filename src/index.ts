@@ -2,9 +2,7 @@ import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
 import { ISettingRegistry } from '@jupyterlab/settingregistry';
-import fileBrowserOverride from './fileBrowserOverride';
 import { removeDownloadByCss } from './removeDownload';
 
 /**
@@ -13,21 +11,14 @@ import { removeDownloadByCss } from './removeDownload';
 const extension: JupyterFrontEndPlugin<void> = {
   id: 'myext',
   autoStart: true,
-  requires: [IFileBrowserFactory, ISettingRegistry],
-  activate: (
-    app: JupyterFrontEnd,
-    factory: IFileBrowserFactory,
-    settingRegistry: ISettingRegistry
-  ) => {
+  requires: [ISettingRegistry],
+  activate: (app: JupyterFrontEnd) => {
     console.log(
       'JupyterLab extension [myext-remove-download-from-filebrowser] is activated!'
     );
 
     removeDownloadByCss();
-
-    fileBrowserOverride(app, factory);
   }
 };
 
 export default extension;
-

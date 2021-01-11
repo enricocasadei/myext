@@ -1,6 +1,6 @@
 {
   "name": "enricocasadei-myext",
-  "version": "0.1.2",
+  "version": "0.2.3",
   "description": "A JupyterLab extension.",
   "keywords": [
     "jupyter",
@@ -33,9 +33,7 @@
     "watch": "tsc -w"
   },
   "dependencies": {
-    "@jupyterlab/application": "^2.0.0",
-    "@jupyterlab/docmanager": "^2.2.4",
-    "@jupyterlab/filebrowser": "^2.2.5"
+    "@jupyterlab/application": "^2.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.25.0",
